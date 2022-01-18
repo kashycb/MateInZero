@@ -10,11 +10,42 @@ using System.Windows.Forms;
 
 namespace MateInZero
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
+            mainMenuExitBtn.MouseEnter += OnMouseEnterMainMenuExitBtn;
+            mainMenuStartBtn.MouseEnter += OnMouseEnterMainMenuStartBtn;
+            mainMenuExitBtn.MouseLeave += OnMouseLeaveMainMenuExitBtn;
+            mainMenuStartBtn.MouseLeave += OnMouseLeaveMainMenuStartBtn;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainMenuExitBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnMouseEnterMainMenuExitBtn(object sender, EventArgs e) 
+        {
+            mainMenuExitBtn.BackColor = Color.PaleGreen;
+        }
+        private void OnMouseEnterMainMenuStartBtn(object sender, EventArgs e)
+        {
+            mainMenuStartBtn.BackColor = Color.PaleGreen;
+        }
+        private void OnMouseLeaveMainMenuExitBtn(object sender, EventArgs e)
+        {
+            mainMenuExitBtn.BackColor = Color.PaleTurquoise;
+        }
+        private void OnMouseLeaveMainMenuStartBtn(object sender, EventArgs e)
+        {
+            mainMenuStartBtn.BackColor = Color.PaleTurquoise;
         }
     }
 }
