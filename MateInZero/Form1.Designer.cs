@@ -76,6 +76,7 @@
             this.Controls.Add(this.mainMenuExitBtn);
             this.Controls.Add(this.mainMenuStartBtn);
             this.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainMenu";
             this.Text = "MateInZero";
