@@ -34,9 +34,7 @@
             // 
             // mainMenuStartBtn
             // 
-            this.mainMenuStartBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainMenuStartBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainMenuStartBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainMenuStartBtn.BackColor = System.Drawing.Color.PaleTurquoise;
             this.mainMenuStartBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -53,9 +51,7 @@
             // 
             // mainMenuExitBtn
             // 
-            this.mainMenuExitBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainMenuExitBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainMenuExitBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainMenuExitBtn.BackColor = System.Drawing.Color.PaleTurquoise;
             this.mainMenuExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
