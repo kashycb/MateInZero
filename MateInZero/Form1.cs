@@ -28,7 +28,7 @@ namespace MateInZero
 
         private void mainMenuExitBtn_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void OnMouseEnterMainMenuExitBtn(object sender, EventArgs e) 
