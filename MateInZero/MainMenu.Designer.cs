@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.mainMenuStartBtn = new System.Windows.Forms.Button();
             this.mainMenuExitBtn = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // mainMenuStartBtn
@@ -49,6 +51,7 @@
             this.mainMenuStartBtn.TabIndex = 0;
             this.mainMenuStartBtn.Text = "Begin";
             this.mainMenuStartBtn.UseVisualStyleBackColor = false;
+            this.mainMenuStartBtn.Click += new System.EventHandler(this.mainMenuStartBtn_Click);
             // 
             // mainMenuExitBtn
             // 
@@ -67,6 +70,11 @@
             this.mainMenuExitBtn.Text = "Exit";
             this.mainMenuExitBtn.UseVisualStyleBackColor = false;
             this.mainMenuExitBtn.Click += new System.EventHandler(this.mainMenuExitBtn_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // MainMenu
             // 
@@ -91,6 +99,7 @@
 
         private System.Windows.Forms.Button mainMenuStartBtn;
         private System.Windows.Forms.Button mainMenuExitBtn;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

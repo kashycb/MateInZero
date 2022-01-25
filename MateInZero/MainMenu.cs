@@ -47,5 +47,11 @@ namespace MateInZero
         {
             mainMenuStartBtn.BackColor = Color.PaleTurquoise;
         }
+        private void mainMenuStartBtn_Click(object sender, EventArgs e)
+        {
+            Board board = new Board(this);
+            board.Show();
+            this.Hide();
+        }
     }
 }
