@@ -11,6 +11,8 @@ namespace MateInZero
 {
     public class GameBoard
     {
-
+        private Piece BlackKing;
+        private Piece WhiteKing;
+        private Piece [,] boardGrid = new Piece [7,7];
     }
 }
