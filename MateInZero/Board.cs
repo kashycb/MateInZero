@@ -22,6 +22,8 @@ namespace MateInZero
         {
             InitializeComponent();
             initializePictureBoxes();
+            nextMoveButton.MouseEnter += OnMouseEnterNextMoveButton;
+            nextMoveButton.MouseLeave += OnMouseLeaveNextMoveButton;
             this.FormClosing += new FormClosingEventHandler(Board_FormClosing);
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -78,6 +80,15 @@ namespace MateInZero
             pbWBF.Parent = pbBoard;
             pbWQ.Parent = pbBoard;
             pbWK.Parent = pbBoard;
+        }
+
+        private void OnMouseEnterNextMoveButton(object sender, EventArgs e)
+        {
+            nextMoveButton.BackColor = Color.Honeydew;
+        }
+        private void OnMouseLeaveNextMoveButton(object sender, EventArgs e)
+        {
+            nextMoveButton.BackColor = Color.MediumSpringGreen;
         }
     }
 }
