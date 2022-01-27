@@ -30,9 +30,18 @@ namespace MateInZero
             this.FormClosing += new FormClosingEventHandler(Board_FormClosing);
         }
 
-        private void movePiece(PictureBox piece, string location) 
+        private void movePiece(PictureBox piece, string newLocation, string currentLocation) 
         {
-            //move the piece
+            //get coordinates from string parameters
+            Tuple<int, int> newCoords = SquareToCoords(newLocation);
+            Tuple<int, int> oldCoords = SquareToCoords(currentLocation);
+
+            //calculate move amount
+            int lateralMoveAmount = (newCoords.Item1 - oldCoords.Item1) * SQAURESIZEP;
+            int verticalMoveAmount = (newCoords.Item2 - oldCoords.Item2) * SQAURESIZEP;
+
+            //move piece
+            piece.Location = new Point(piece.Location.X + lateralMoveAmount, piece.Location.Y + verticalMoveAmount);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -112,6 +121,11 @@ namespace MateInZero
             int result;
             lettermap.TryGetValue(Char.ToLower(square[0]), out result);
             return Tuple.Create(result, (int)square[1] - 49);
+        }
+
+        private void nextMoveButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

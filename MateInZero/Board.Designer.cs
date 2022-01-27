@@ -512,6 +512,7 @@
             this.nextMoveButton.TabIndex = 33;
             this.nextMoveButton.Text = "Next Move";
             this.nextMoveButton.UseVisualStyleBackColor = false;
+            this.nextMoveButton.Click += new System.EventHandler(this.nextMoveButton_Click);
             // 
             // Board
             // 
