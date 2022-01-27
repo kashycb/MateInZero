@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Board));
             this.pbBoard = new System.Windows.Forms.PictureBox();
-            this.moveTimer = new System.Windows.Forms.Timer(this.components);
             this.pbBRA = new System.Windows.Forms.PictureBox();
             this.pbBKB = new System.Windows.Forms.PictureBox();
             this.pbBBC = new System.Windows.Forms.PictureBox();
@@ -110,11 +108,6 @@
             this.pbBoard.Size = new System.Drawing.Size(616, 614);
             this.pbBoard.TabIndex = 0;
             this.pbBoard.TabStop = false;
-            // 
-            // moveTimer
-            // 
-            this.moveTimer.Interval = 20;
-            this.moveTimer.Tick += new System.EventHandler(this.moveTimer_Tick);
             // 
             // pbBRA
             // 
@@ -598,7 +591,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbBoard;
-        private System.Windows.Forms.Timer moveTimer;
         private System.Windows.Forms.PictureBox pbBRA;
         private System.Windows.Forms.PictureBox pbBKB;
         private System.Windows.Forms.PictureBox pbBBC;
