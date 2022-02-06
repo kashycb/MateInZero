@@ -52,6 +52,7 @@
     <Compile Include="Board.Designer.cs">
       <DependentUpon>Board.cs</DependentUpon>
     </Compile>
+    <Compile Include="Behavior.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="GameBoard.cs" />
     <Compile Include="MainMenu.cs">
