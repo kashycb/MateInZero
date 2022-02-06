@@ -37,7 +37,7 @@ namespace MateInZero
             Tuple<int, int> oldCoords = SquareToCoords(currentLocation);
 
             //calculate move amount
-            int lateralMoveAmount = (newCoords.Item1 - oldCoords.Item1) * SQAURESIZEP;
+            int lateralMoveAmount = -1 * (newCoords.Item1 - oldCoords.Item1) * SQAURESIZEP;
             int verticalMoveAmount = (newCoords.Item2 - oldCoords.Item2) * SQAURESIZEP;
 
             //move piece
@@ -125,7 +125,7 @@ namespace MateInZero
 
         private void nextMoveButton_Click(object sender, EventArgs e)
         {
-
+            //Pass logic to gameBoard
         }
     }
 }
