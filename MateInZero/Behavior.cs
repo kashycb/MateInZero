@@ -8,6 +8,6 @@ namespace MateInZero
 {
     public abstract class Behavior
     {
-        public abstract string[] findMoves();
+        public abstract Tuple<string, int>[] findMoves();
     }
 }
