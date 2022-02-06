@@ -12,7 +12,7 @@ namespace MateInZero
         private Behavior behavior;
 
         //wrap the find moves function from pieces behavior
-        public Tuple<string, int>[] findMoves() 
+        public Tuple<int, string>[] findMoves() 
         {
             return this.behavior.findMoves();
         }

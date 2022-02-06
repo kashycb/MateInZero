@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MateInZero
 {
-    public abstract class Behavior
+    public class King : Piece
     {
-        public abstract Tuple<int, string>[] findMoves();
+        
     }
 }
