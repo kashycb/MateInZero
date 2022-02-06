@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MateInZero
 {
-    public class Piece
+    public abstract class Piece
     {
 
     }
