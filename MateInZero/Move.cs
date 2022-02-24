@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MateInZero
 {
-    internal class Move
+    public class Move
     {
         int moveValue; //How valuable the move is percieved to be by the suggesting piece
         Tuple<int, int> startingSquare; //Where the moving piece is located
