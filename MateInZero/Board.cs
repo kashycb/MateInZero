@@ -17,6 +17,8 @@ namespace MateInZero
 
         private Form CallingForm = null;
 
+        public GameBoard gameBoard;
+
         public Board(Form callingForm) : this()
         {
             this.CallingForm = callingForm;
@@ -125,7 +127,7 @@ namespace MateInZero
 
         private void nextMoveButton_Click(object sender, EventArgs e)
         {
-            //Pass logic to gameBoard
+            //Pass control to gameBoard
         }
     }
 }

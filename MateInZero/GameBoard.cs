@@ -11,8 +11,39 @@ namespace MateInZero
 {
     public class GameBoard
     {
-        private Piece BlackKing;
-        private Piece WhiteKing;
-        private Piece [,] boardGrid = new Piece [7,7];
+        private bool whiteTurn = true;
+
+        public King BlackKing;
+        public King WhiteKing;
+
+        private Piece [,] boardGrid = new Piece[8, 8] { 
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null},
+            {null, null, null, null, null, null, null, null}
+        };
+        
+        public GameBoard()
+        {
+            this.boardGrid[0, 4] = WhiteKing;
+            this.boardGrid[7, 4] = BlackKing;
+        }
+
+        //play the next turn
+        public void playtTurn()
+        {
+            if (whiteTurn)
+            {
+                this.WhiteKing.playMove();
+            }
+            else
+            {
+                this.BlackKing.playMove();
+            }
+        }
     }
 }

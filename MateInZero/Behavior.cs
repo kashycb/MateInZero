@@ -8,7 +8,7 @@ namespace MateInZero
 {
     public abstract class Behavior
     {
-        public abstract Tuple<int, Tuple<string, Piece>> pickMove(int x, int y);
+        public abstract Move pickMove(int x, int y);
     }
 
     //king
@@ -24,12 +24,12 @@ namespace MateInZero
         private int PRIORITY_MULTIPLYER = 7;
 
         //find the king's most preffered move
-        public override Tuple<int, Tuple<string, Piece>> pickMove(int x, int y)
+        public override Move pickMove(int x, int y)
         {
-            Tuple<int, Tuple<string, Piece>>[] moves = new Tuple<int, Tuple<string, Piece>>[8];
+            Move[] moves = new Move[8];
             //do some work to find kings moves
             //do some more work to pick best option and return it
-            return Tuple.Create<int, Tuple<string, Piece>>(0, Tuple.Create<string, Piece>(null, null));
+            return null;
         }
 
         //check if a square is under attack

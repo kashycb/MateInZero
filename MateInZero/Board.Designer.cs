@@ -115,7 +115,7 @@
             this.pbBRA.BackColor = System.Drawing.Color.Transparent;
             this.pbBRA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBRA.BackgroundImage")));
             this.pbBRA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBRA.Location = new System.Drawing.Point(30, 38);
+            this.pbBRA.Location = new System.Drawing.Point(626, 33);
             this.pbBRA.Name = "pbBRA";
             this.pbBRA.Size = new System.Drawing.Size(65, 60);
             this.pbBRA.TabIndex = 1;
@@ -127,7 +127,7 @@
             this.pbBKB.BackColor = System.Drawing.Color.Transparent;
             this.pbBKB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBKB.BackgroundImage")));
             this.pbBKB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBKB.Location = new System.Drawing.Point(99, 38);
+            this.pbBKB.Location = new System.Drawing.Point(695, 33);
             this.pbBKB.Name = "pbBKB";
             this.pbBKB.Size = new System.Drawing.Size(65, 60);
             this.pbBKB.TabIndex = 2;
@@ -139,7 +139,7 @@
             this.pbBBC.BackColor = System.Drawing.Color.Transparent;
             this.pbBBC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBBC.BackgroundImage")));
             this.pbBBC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBBC.Location = new System.Drawing.Point(169, 38);
+            this.pbBBC.Location = new System.Drawing.Point(765, 33);
             this.pbBBC.Name = "pbBBC";
             this.pbBBC.Size = new System.Drawing.Size(65, 60);
             this.pbBBC.TabIndex = 3;
@@ -151,7 +151,7 @@
             this.pbBPA.BackColor = System.Drawing.Color.Transparent;
             this.pbBPA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPA.BackgroundImage")));
             this.pbBPA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPA.Location = new System.Drawing.Point(30, 108);
+            this.pbBPA.Location = new System.Drawing.Point(626, 103);
             this.pbBPA.Name = "pbBPA";
             this.pbBPA.Size = new System.Drawing.Size(65, 60);
             this.pbBPA.TabIndex = 4;
@@ -163,7 +163,7 @@
             this.pbBPB.BackColor = System.Drawing.Color.Transparent;
             this.pbBPB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPB.BackgroundImage")));
             this.pbBPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPB.Location = new System.Drawing.Point(99, 108);
+            this.pbBPB.Location = new System.Drawing.Point(695, 103);
             this.pbBPB.Name = "pbBPB";
             this.pbBPB.Size = new System.Drawing.Size(65, 60);
             this.pbBPB.TabIndex = 5;
@@ -175,7 +175,7 @@
             this.pbBPC.BackColor = System.Drawing.Color.Transparent;
             this.pbBPC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPC.BackgroundImage")));
             this.pbBPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPC.Location = new System.Drawing.Point(169, 108);
+            this.pbBPC.Location = new System.Drawing.Point(765, 103);
             this.pbBPC.Name = "pbBPC";
             this.pbBPC.Size = new System.Drawing.Size(65, 60);
             this.pbBPC.TabIndex = 6;
@@ -187,7 +187,7 @@
             this.pbBPD.BackColor = System.Drawing.Color.Transparent;
             this.pbBPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPD.BackgroundImage")));
             this.pbBPD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPD.Location = new System.Drawing.Point(239, 108);
+            this.pbBPD.Location = new System.Drawing.Point(835, 103);
             this.pbBPD.Name = "pbBPD";
             this.pbBPD.Size = new System.Drawing.Size(65, 60);
             this.pbBPD.TabIndex = 7;
@@ -199,7 +199,7 @@
             this.pbBQ.BackColor = System.Drawing.Color.Transparent;
             this.pbBQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBQ.BackgroundImage")));
             this.pbBQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBQ.Location = new System.Drawing.Point(239, 38);
+            this.pbBQ.Location = new System.Drawing.Point(835, 33);
             this.pbBQ.Name = "pbBQ";
             this.pbBQ.Size = new System.Drawing.Size(65, 60);
             this.pbBQ.TabIndex = 8;
@@ -223,7 +223,7 @@
             this.pbBPE.BackColor = System.Drawing.Color.Transparent;
             this.pbBPE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPE.BackgroundImage")));
             this.pbBPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPE.Location = new System.Drawing.Point(309, 108);
+            this.pbBPE.Location = new System.Drawing.Point(905, 103);
             this.pbBPE.Name = "pbBPE";
             this.pbBPE.Size = new System.Drawing.Size(65, 60);
             this.pbBPE.TabIndex = 10;
@@ -235,7 +235,7 @@
             this.pbBBF.BackColor = System.Drawing.Color.Transparent;
             this.pbBBF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBBF.BackgroundImage")));
             this.pbBBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBBF.Location = new System.Drawing.Point(378, 38);
+            this.pbBBF.Location = new System.Drawing.Point(974, 33);
             this.pbBBF.Name = "pbBBF";
             this.pbBBF.Size = new System.Drawing.Size(65, 60);
             this.pbBBF.TabIndex = 11;
@@ -247,7 +247,7 @@
             this.pbBPF.BackColor = System.Drawing.Color.Transparent;
             this.pbBPF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPF.BackgroundImage")));
             this.pbBPF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPF.Location = new System.Drawing.Point(378, 108);
+            this.pbBPF.Location = new System.Drawing.Point(974, 103);
             this.pbBPF.Name = "pbBPF";
             this.pbBPF.Size = new System.Drawing.Size(65, 60);
             this.pbBPF.TabIndex = 12;
@@ -259,7 +259,7 @@
             this.pbBKG.BackColor = System.Drawing.Color.Transparent;
             this.pbBKG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBKG.BackgroundImage")));
             this.pbBKG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBKG.Location = new System.Drawing.Point(447, 38);
+            this.pbBKG.Location = new System.Drawing.Point(1043, 33);
             this.pbBKG.Name = "pbBKG";
             this.pbBKG.Size = new System.Drawing.Size(65, 60);
             this.pbBKG.TabIndex = 13;
@@ -271,7 +271,7 @@
             this.pbBPG.BackColor = System.Drawing.Color.Transparent;
             this.pbBPG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPG.BackgroundImage")));
             this.pbBPG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPG.Location = new System.Drawing.Point(447, 108);
+            this.pbBPG.Location = new System.Drawing.Point(1043, 103);
             this.pbBPG.Name = "pbBPG";
             this.pbBPG.Size = new System.Drawing.Size(65, 60);
             this.pbBPG.TabIndex = 14;
@@ -283,7 +283,7 @@
             this.pbBRH.BackColor = System.Drawing.Color.Transparent;
             this.pbBRH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBRH.BackgroundImage")));
             this.pbBRH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBRH.Location = new System.Drawing.Point(517, 38);
+            this.pbBRH.Location = new System.Drawing.Point(1113, 33);
             this.pbBRH.Name = "pbBRH";
             this.pbBRH.Size = new System.Drawing.Size(65, 60);
             this.pbBRH.TabIndex = 15;
@@ -295,7 +295,7 @@
             this.pbBPH.BackColor = System.Drawing.Color.Transparent;
             this.pbBPH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBPH.BackgroundImage")));
             this.pbBPH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBPH.Location = new System.Drawing.Point(517, 108);
+            this.pbBPH.Location = new System.Drawing.Point(1113, 103);
             this.pbBPH.Name = "pbBPH";
             this.pbBPH.Size = new System.Drawing.Size(65, 60);
             this.pbBPH.TabIndex = 16;
@@ -307,7 +307,7 @@
             this.pbWRH.BackColor = System.Drawing.Color.Transparent;
             this.pbWRH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWRH.BackgroundImage")));
             this.pbWRH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWRH.Location = new System.Drawing.Point(517, 524);
+            this.pbWRH.Location = new System.Drawing.Point(1113, 519);
             this.pbWRH.Name = "pbWRH";
             this.pbWRH.Size = new System.Drawing.Size(65, 60);
             this.pbWRH.TabIndex = 32;
@@ -319,7 +319,7 @@
             this.pbWPH.BackColor = System.Drawing.Color.Transparent;
             this.pbWPH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPH.BackgroundImage")));
             this.pbWPH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPH.Location = new System.Drawing.Point(517, 454);
+            this.pbWPH.Location = new System.Drawing.Point(1113, 449);
             this.pbWPH.Name = "pbWPH";
             this.pbWPH.Size = new System.Drawing.Size(65, 60);
             this.pbWPH.TabIndex = 31;
@@ -331,7 +331,7 @@
             this.pbWKG.BackColor = System.Drawing.Color.Transparent;
             this.pbWKG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWKG.BackgroundImage")));
             this.pbWKG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWKG.Location = new System.Drawing.Point(447, 524);
+            this.pbWKG.Location = new System.Drawing.Point(1043, 519);
             this.pbWKG.Name = "pbWKG";
             this.pbWKG.Size = new System.Drawing.Size(65, 60);
             this.pbWKG.TabIndex = 30;
@@ -343,7 +343,7 @@
             this.pbWPG.BackColor = System.Drawing.Color.Transparent;
             this.pbWPG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPG.BackgroundImage")));
             this.pbWPG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPG.Location = new System.Drawing.Point(447, 454);
+            this.pbWPG.Location = new System.Drawing.Point(1043, 449);
             this.pbWPG.Name = "pbWPG";
             this.pbWPG.Size = new System.Drawing.Size(65, 60);
             this.pbWPG.TabIndex = 29;
@@ -355,7 +355,7 @@
             this.pbWBF.BackColor = System.Drawing.Color.Transparent;
             this.pbWBF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWBF.BackgroundImage")));
             this.pbWBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWBF.Location = new System.Drawing.Point(378, 524);
+            this.pbWBF.Location = new System.Drawing.Point(974, 519);
             this.pbWBF.Name = "pbWBF";
             this.pbWBF.Size = new System.Drawing.Size(65, 60);
             this.pbWBF.TabIndex = 28;
@@ -367,7 +367,7 @@
             this.pbWPF.BackColor = System.Drawing.Color.Transparent;
             this.pbWPF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPF.BackgroundImage")));
             this.pbWPF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPF.Location = new System.Drawing.Point(378, 454);
+            this.pbWPF.Location = new System.Drawing.Point(974, 449);
             this.pbWPF.Name = "pbWPF";
             this.pbWPF.Size = new System.Drawing.Size(65, 60);
             this.pbWPF.TabIndex = 27;
@@ -391,7 +391,7 @@
             this.pbWPE.BackColor = System.Drawing.Color.Transparent;
             this.pbWPE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPE.BackgroundImage")));
             this.pbWPE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPE.Location = new System.Drawing.Point(309, 454);
+            this.pbWPE.Location = new System.Drawing.Point(905, 449);
             this.pbWPE.Name = "pbWPE";
             this.pbWPE.Size = new System.Drawing.Size(65, 60);
             this.pbWPE.TabIndex = 25;
@@ -403,7 +403,7 @@
             this.pbWPD.BackColor = System.Drawing.Color.Transparent;
             this.pbWPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPD.BackgroundImage")));
             this.pbWPD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPD.Location = new System.Drawing.Point(239, 454);
+            this.pbWPD.Location = new System.Drawing.Point(835, 449);
             this.pbWPD.Name = "pbWPD";
             this.pbWPD.Size = new System.Drawing.Size(65, 60);
             this.pbWPD.TabIndex = 24;
@@ -415,7 +415,7 @@
             this.pbWQ.BackColor = System.Drawing.Color.Transparent;
             this.pbWQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWQ.BackgroundImage")));
             this.pbWQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWQ.Location = new System.Drawing.Point(239, 524);
+            this.pbWQ.Location = new System.Drawing.Point(835, 519);
             this.pbWQ.Name = "pbWQ";
             this.pbWQ.Size = new System.Drawing.Size(65, 60);
             this.pbWQ.TabIndex = 23;
@@ -427,7 +427,7 @@
             this.pbWBC.BackColor = System.Drawing.Color.Transparent;
             this.pbWBC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWBC.BackgroundImage")));
             this.pbWBC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWBC.Location = new System.Drawing.Point(169, 524);
+            this.pbWBC.Location = new System.Drawing.Point(765, 519);
             this.pbWBC.Name = "pbWBC";
             this.pbWBC.Size = new System.Drawing.Size(65, 60);
             this.pbWBC.TabIndex = 22;
@@ -439,7 +439,7 @@
             this.pbWKB.BackColor = System.Drawing.Color.Transparent;
             this.pbWKB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWKB.BackgroundImage")));
             this.pbWKB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWKB.Location = new System.Drawing.Point(99, 524);
+            this.pbWKB.Location = new System.Drawing.Point(695, 519);
             this.pbWKB.Name = "pbWKB";
             this.pbWKB.Size = new System.Drawing.Size(65, 60);
             this.pbWKB.TabIndex = 21;
@@ -451,7 +451,7 @@
             this.pbWRA.BackColor = System.Drawing.Color.Transparent;
             this.pbWRA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWRA.BackgroundImage")));
             this.pbWRA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWRA.Location = new System.Drawing.Point(29, 524);
+            this.pbWRA.Location = new System.Drawing.Point(625, 519);
             this.pbWRA.Name = "pbWRA";
             this.pbWRA.Size = new System.Drawing.Size(65, 60);
             this.pbWRA.TabIndex = 20;
@@ -463,7 +463,7 @@
             this.pbWPC.BackColor = System.Drawing.Color.Transparent;
             this.pbWPC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPC.BackgroundImage")));
             this.pbWPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPC.Location = new System.Drawing.Point(169, 454);
+            this.pbWPC.Location = new System.Drawing.Point(765, 449);
             this.pbWPC.Name = "pbWPC";
             this.pbWPC.Size = new System.Drawing.Size(65, 60);
             this.pbWPC.TabIndex = 19;
@@ -475,7 +475,7 @@
             this.pbWPB.BackColor = System.Drawing.Color.Transparent;
             this.pbWPB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPB.BackgroundImage")));
             this.pbWPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPB.Location = new System.Drawing.Point(99, 454);
+            this.pbWPB.Location = new System.Drawing.Point(695, 449);
             this.pbWPB.Name = "pbWPB";
             this.pbWPB.Size = new System.Drawing.Size(65, 60);
             this.pbWPB.TabIndex = 18;
@@ -487,7 +487,7 @@
             this.pbWPA.BackColor = System.Drawing.Color.Transparent;
             this.pbWPA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWPA.BackgroundImage")));
             this.pbWPA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWPA.Location = new System.Drawing.Point(29, 454);
+            this.pbWPA.Location = new System.Drawing.Point(625, 449);
             this.pbWPA.Name = "pbWPA";
             this.pbWPA.Size = new System.Drawing.Size(65, 60);
             this.pbWPA.TabIndex = 17;

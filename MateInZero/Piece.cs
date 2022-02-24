@@ -13,7 +13,7 @@ namespace MateInZero
         public Tuple<int, int> currentPosition;
 
         //wrap the find moves function from pieces behavior
-        public Tuple<int, Tuple<string, Piece>> pickMove() 
+        public Move pickMove() 
         {
             return this.behavior.pickMove(currentPosition.Item1, currentPosition.Item2);
         }
