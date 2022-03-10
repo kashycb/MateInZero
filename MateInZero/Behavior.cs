@@ -14,8 +14,13 @@ namespace MateInZero
     //king
     public class KingBehavior : Behavior
     {
-        //The king does not need a vision pattern since it can see the whole board
-
+        private KingBehavior() { }
+        
+        public KingBehavior(King k)
+        {
+            king = k;
+        }
+        public King king;
         //Move values
         private int ESCAPE_THREAT = 100;
         private int CAPTURE_PIECE = 10;
@@ -58,18 +63,15 @@ namespace MateInZero
                     //Console.WriteLine(move.endingSquare);
                     if (bestMove == null || move.moveValue > bestMove.moveValue)
                     {
-                        bestMove = move;
+                        //check if a square is under attack
+                        //king will not move to/remain on a square if it is under attack
+                        if(king.checkSafe(move.endingSquare.Item1, move.endingSquare.Item2)){
+                            bestMove = move;
+                        }
                     }
                 } 
             }
             return bestMove;
-        }
-
-        //check if a square is under attack
-        //king will not move to/remain on a square if it is under attack
-        private bool checkThreats(int x, int y)
-        {
-            return false;
         }
     }
 }

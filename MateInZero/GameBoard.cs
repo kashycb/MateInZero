@@ -18,7 +18,7 @@ namespace MateInZero
         public King blackKing;
         public King whiteKing;
 
-        private Piece [,] boardGrid = new Piece[8, 8] { 
+        public Piece [,] boardGrid = new Piece[8, 8] { 
             {null, null, null, null, null, null, null, null},
             {null, null, null, null, null, null, null, null},
             {null, null, null, null, null, null, null, null},
