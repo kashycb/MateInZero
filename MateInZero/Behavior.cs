@@ -54,6 +54,11 @@ namespace MateInZero
                     placementIndex++;
                 }
             }
+            //shuffle moves
+            Random rnd = new Random();
+            Move[] shuffledMoves= moves.OrderBy(M => rnd.Next()).ToArray();
+            moves = shuffledMoves;
+
             Move bestMove = null;
             foreach (Move move in moves)
             {

@@ -72,6 +72,7 @@ namespace MateInZero
         {
             //pick a move for the king
             Move pickedMove = pickMove(this);
+
             //Console.WriteLine("Picked move: " + pickedMove.endingSquare);
             for (int i = 0; i < suggestedMoves.Length; i++)
                 if (suggestedMoves[i] == null)
