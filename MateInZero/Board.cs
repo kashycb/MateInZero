@@ -12,7 +12,9 @@ using System.Windows.Forms;
 namespace MateInZero
 {
     public partial class Board : Form
+
     {
+        private Dictionary<string, PictureBox> pieceNames;
         private const int SQAURESIZEP = 70;
 
         private Form CallingForm = null;
@@ -25,25 +27,50 @@ namespace MateInZero
         }
         public Board()
         {
+
+
+            gameBoard = new GameBoard(this);
             InitializeComponent();
             InitializePictureBoxes();
+            //initialize dictionary of names to pictures
+            pieceNames = new Dictionary<string, PictureBox>()
+            {
+                {"White-King", this.pbWK},
+                {"Black-King", this.pbBK}
+            };
             nextMoveButton.MouseEnter += OnMouseEnterNextMoveButton;
             nextMoveButton.MouseLeave += OnMouseLeaveNextMoveButton;
             this.FormClosing += new FormClosingEventHandler(Board_FormClosing);
         }
 
-        private void movePiece(PictureBox piece, string newLocation, string currentLocation) 
+        public void movePiece(String pieceName, Tuple<int, int> newCoords, Tuple<int, int> oldCoords) 
         {
-            //get coordinates from string parameters
-            Tuple<int, int> newCoords = SquareToCoords(newLocation);
-            Tuple<int, int> oldCoords = SquareToCoords(currentLocation);
+            //get piece reference from dictionary
+            //Console.WriteLine(pieceNames[pieceName]);
+
+            PictureBox piece = pieceNames[pieceName];
 
             //calculate move amount
-            int lateralMoveAmount = -1 * (newCoords.Item1 - oldCoords.Item1) * SQAURESIZEP;
-            int verticalMoveAmount = (newCoords.Item2 - oldCoords.Item2) * SQAURESIZEP;
+            int lateralMoveAmount = -1 * (oldCoords.Item1 - newCoords.Item1) * SQAURESIZEP;
+            int verticalMoveAmount = (oldCoords.Item2 - newCoords.Item2) * SQAURESIZEP;
 
             //move piece
             piece.Location = new Point(piece.Location.X + lateralMoveAmount, piece.Location.Y + verticalMoveAmount);
+        }
+
+        public void deletePiece(String pieceName)
+        {
+            //check to see if the king has been captured
+            if(pieceName == "White-King" || pieceName == "Black-King")
+            {
+                Console.WriteLine("Game over!");
+                //Do better endgame things here
+            }
+
+            PictureBox piece = pieceNames[pieceName];
+            //effectively remove the piece from sight
+            //it will be removed from the working board in gameBoard::playMove()
+            piece.Visible = false;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -128,6 +155,7 @@ namespace MateInZero
         private void nextMoveButton_Click(object sender, EventArgs e)
         {
             //Pass control to gameBoard
+            this.gameBoard.playTurn();
         }
     }
 }
