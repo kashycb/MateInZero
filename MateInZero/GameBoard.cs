@@ -36,6 +36,14 @@ namespace MateInZero
             whiteKing = new King(true, this);
             blackKing = new King(false, this);
             this.boardGrid[4, 0] = whiteKing;
+            this.boardGrid[0, 1] = whiteKing.pieces[0];
+            this.boardGrid[1, 1] = whiteKing.pieces[1];
+            this.boardGrid[2, 1] = whiteKing.pieces[2];
+            this.boardGrid[3, 1] = whiteKing.pieces[3];
+            this.boardGrid[4, 1] = whiteKing.pieces[4];
+            this.boardGrid[5, 1] = whiteKing.pieces[5];
+            this.boardGrid[6, 1] = whiteKing.pieces[6];
+            this.boardGrid[7, 1] = whiteKing.pieces[7];
             this.boardGrid[4, 7] = blackKing;
         }
 
@@ -56,10 +64,16 @@ namespace MateInZero
 
         public void playMove(Move move)
         {
-            if(this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2] != null)
+            Piece p = this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2];
+            if (p != null)
             {
                 //delete the piece since it has been captured
-                board.deletePiece(move.actor.name);
+                //delete visually
+                board.deletePiece(p.name);
+                //delete the piece from the kings array
+                p.king.deletePiece(p.name);
+                //delete from boardGrid
+                this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2] = null;
             }
 
             //move piece to new location on the board

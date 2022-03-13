@@ -8,7 +8,9 @@ namespace MateInZero
 {
     public abstract class Piece
     {
+        public bool white;
         public string name;
+        public King king;
         //controls how the piece moves and thinks
         protected Behavior behavior;
         //Where the piece is on the board (x,y) cartesian coords

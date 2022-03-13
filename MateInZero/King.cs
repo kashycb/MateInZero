@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MateInZero
@@ -12,6 +13,9 @@ namespace MateInZero
         private King(){ }
         
         public GameBoard gameBoard;
+
+        //keep an array of subbordinate pieces
+        public Piece[] pieces = new Piece[15];
         public King(bool white, GameBoard board)
         {
             gameBoard = board;
@@ -19,19 +23,40 @@ namespace MateInZero
             {
                 this.currentPosition = Tuple.Create<int, int>(4, 0);
                 this.name = "White-King";
+                this.white = true;
+                pieces[0] = new WhitePawn(gameBoard, 'A', this);
+                pieces[1] = new WhitePawn(gameBoard, 'B', this);
+                pieces[2] = new WhitePawn(gameBoard, 'C', this);
+                pieces[3] = new WhitePawn(gameBoard, 'D', this);
+                pieces[4] = new WhitePawn(gameBoard, 'E', this);
+                pieces[5] = new WhitePawn(gameBoard, 'F', this);
+                pieces[6] = new WhitePawn(gameBoard, 'G', this);
+                pieces[7] = new WhitePawn(gameBoard, 'H', this);
             }
             else
             {
                 this.currentPosition = Tuple.Create<int, int>(4, 7);
                 this.name = "Black-King";
+                this.white = false;
             }
             this.behavior = new KingBehavior(this);
             
         }
 
-        //keep an array of subbordinate pieces
-        //private Piece[] pieces = new Pieces[16]
-
+        public void deletePiece(string pieceName)
+        {
+            for(int i = 0; i < 15; ++i)
+            {
+                Piece p = pieces[i];
+                if (p != null && p.name == pieceName)
+                {
+                    pieces[i] = null;
+                    Console.WriteLine("Deleted" + pieceName);
+                    return;
+                }
+                Console.WriteLine("No piece deleted");
+            }
+        }
         public Move[] suggestedMoves = new Move[16];
 
         //Check to see if a square is under threat
@@ -65,6 +90,44 @@ namespace MateInZero
                     }
                 }
             }
+
+            //Check if a pawn threatening a square
+            Regex rgx = new Regex("White -[a - zA - Z] + -Pawn");
+            if (this.white == false) {
+                for (int i = -1; i < 2; i += 2)
+                {
+                    if (x + i < 0 || x + i > 7 || y - 1 < 0)
+                    {
+                        //skip invalid square
+                        continue;
+                    }
+                    Piece piece = gameBoard.boardGrid[x + i, y - 1];
+                    if (piece != null)
+                    {
+                        if(piece.white != this.white)
+                            return false;
+                    }
+                }
+            }
+            rgx = new Regex("Black -[a - zA - Z] + -Pawn");
+            if (this.white)
+            {
+                for (int i = -1; i < 2; i += 2)
+                {
+                    if (x + i < 0 || x + i > 7 || y + 1 > 7)
+                    {
+                        //skip invalid square
+                        continue;
+                    }
+                    Piece piece = gameBoard.boardGrid[x + i, y + 1];
+                    if (piece != null)
+                    {
+                        if (piece.white != this.white)
+                            return false;
+                    }
+                }
+            }
+
             return true;
         }
 
@@ -85,7 +148,11 @@ namespace MateInZero
         public Move playMove()
         {
             //get all moves from other pieces
-
+            foreach (Piece piece in pieces)
+            {
+                if(piece != null)
+                    piece.suggestMove();
+            }
             //get own move
             this.suggestMove();
 
