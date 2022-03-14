@@ -35,6 +35,7 @@ namespace MateInZero
             this.board = board;
             whiteKing = new King(true, this);
             blackKing = new King(false, this);
+            //White
             this.boardGrid[4, 0] = whiteKing;
             this.boardGrid[0, 1] = whiteKing.pieces[0];
             this.boardGrid[1, 1] = whiteKing.pieces[1];
@@ -44,6 +45,16 @@ namespace MateInZero
             this.boardGrid[5, 1] = whiteKing.pieces[5];
             this.boardGrid[6, 1] = whiteKing.pieces[6];
             this.boardGrid[7, 1] = whiteKing.pieces[7];
+            this.boardGrid[4, 0] = whiteKing;
+            //Black
+            this.boardGrid[0, 6] = blackKing.pieces[0];
+            this.boardGrid[1, 6] = blackKing.pieces[1];
+            this.boardGrid[2, 6] = blackKing.pieces[2];
+            this.boardGrid[3, 6] = blackKing.pieces[3];
+            this.boardGrid[4, 6] = blackKing.pieces[4];
+            this.boardGrid[5, 6] = blackKing.pieces[5];
+            this.boardGrid[6, 6] = blackKing.pieces[6];
+            this.boardGrid[7, 6] = blackKing.pieces[7];
             this.boardGrid[4, 7] = blackKing;
         }
 

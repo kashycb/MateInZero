@@ -35,6 +35,7 @@ namespace MateInZero
             //initialize dictionary of names to pictures
             pieceNames = new Dictionary<string, PictureBox>()
             {
+                //White
                 {"White-King", this.pbWK},
                 {"White-A-Pawn", this.pbWPA},
                 {"White-B-Pawn", this.pbWPB},
@@ -44,7 +45,16 @@ namespace MateInZero
                 {"White-F-Pawn", this.pbWPF},
                 {"White-G-Pawn", this.pbWPG},
                 {"White-H-Pawn", this.pbWPH},
-                {"Black-King", this.pbBK}
+                //Black
+                {"Black-King", this.pbBK},
+                {"Black-A-Pawn", this.pbBPA},
+                {"Black-B-Pawn", this.pbBPB},
+                {"Black-C-Pawn", this.pbBPC},
+                {"Black-D-Pawn", this.pbBPD},
+                {"Black-E-Pawn", this.pbBPE},
+                {"Black-F-Pawn", this.pbBPF},
+                {"Black-G-Pawn", this.pbBPG},
+                {"Black-H-Pawn", this.pbBPH}
             };
             nextMoveButton.MouseEnter += OnMouseEnterNextMoveButton;
             nextMoveButton.MouseLeave += OnMouseLeaveNextMoveButton;

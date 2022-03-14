@@ -38,6 +38,14 @@ namespace MateInZero
                 this.currentPosition = Tuple.Create<int, int>(4, 7);
                 this.name = "Black-King";
                 this.white = false;
+                pieces[0] = new BlackPawn(gameBoard, 'A', this);
+                pieces[1] = new BlackPawn(gameBoard, 'B', this);
+                pieces[2] = new BlackPawn(gameBoard, 'C', this);
+                pieces[3] = new BlackPawn(gameBoard, 'D', this);
+                pieces[4] = new BlackPawn(gameBoard, 'E', this);
+                pieces[5] = new BlackPawn(gameBoard, 'F', this);
+                pieces[6] = new BlackPawn(gameBoard, 'G', this);
+                pieces[7] = new BlackPawn(gameBoard, 'H', this);
             }
             this.behavior = new KingBehavior(this);
             
