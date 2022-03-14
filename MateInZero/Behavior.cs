@@ -204,7 +204,7 @@ namespace MateInZero
                 moves[placementIndex] = move;
                 ++placementIndex;
             }
-            if (y - 1 > 1 && king.gameBoard.boardGrid[x, y - 1] == null)
+            if (y - 1 > 0 && king.gameBoard.boardGrid[x, y - 1] == null)
             {
                 //1 square move
                 Move move = new Move { moveValue = NON_ESSENTIAL_MOVE, startingSquare = Tuple.Create<int, int>(x, y), endingSquare = Tuple.Create<int, int>(x, y - 1), actor = actor };

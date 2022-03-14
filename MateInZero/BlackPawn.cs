@@ -25,6 +25,7 @@ namespace MateInZero
 
             gameBoard = board;
             king = k;
+            this.type = "Pawn";
             int result;
             lettermap.TryGetValue(Char.ToLower(file), out result);
             this.currentPosition = Tuple.Create<int, int>(result, 6);

@@ -22,7 +22,7 @@ namespace MateInZero
             var lettermap = new Dictionary<char, int> {
             {'a', 0},{'b', 1},{'c', 2},{'d', 3},{'e', 4},{'f', 5},{'g', 6},{'h', 7},
             };
-
+            this.type = "Pawn";
             gameBoard = board;
             king = k;
             int result;

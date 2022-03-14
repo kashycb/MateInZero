@@ -47,6 +47,8 @@ namespace MateInZero
                 pieces[6] = new BlackPawn(gameBoard, 'G', this);
                 pieces[7] = new BlackPawn(gameBoard, 'H', this);
             }
+            this.type = "King";
+            this.king = this;
             this.behavior = new KingBehavior(this);
             
         }
@@ -59,10 +61,8 @@ namespace MateInZero
                 if (p != null && p.name == pieceName)
                 {
                     pieces[i] = null;
-                    Console.WriteLine("Deleted" + pieceName);
                     return;
                 }
-                Console.WriteLine("No piece deleted");
             }
         }
         public Move[] suggestedMoves = new Move[16];
@@ -86,8 +86,7 @@ namespace MateInZero
                     if (gameBoard.boardGrid[x + i, y + j] != null)
                     {
                         Piece piece = gameBoard.boardGrid[x + i, y + j];
-                        Console.WriteLine(piece);
-                        if(piece.name == "Black-King" || piece.name == "White-King")
+                        if(piece.type == "King")
                         {
                             //ignore yourself
                             if (piece.name == this.name)
@@ -100,7 +99,6 @@ namespace MateInZero
             }
 
             //Check if a pawn threatening a square
-            Regex rgx = new Regex("White -[a - zA - Z] + -Pawn");
             if (this.white == false) {
                 for (int i = -1; i < 2; i += 2)
                 {
@@ -112,12 +110,11 @@ namespace MateInZero
                     Piece piece = gameBoard.boardGrid[x + i, y - 1];
                     if (piece != null)
                     {
-                        if(piece.white != this.white)
+                        if(piece.type == "Pawn" && piece.white != this.white)
                             return false;
                     }
                 }
             }
-            rgx = new Regex("Black -[a - zA - Z] + -Pawn");
             if (this.white)
             {
                 for (int i = -1; i < 2; i += 2)
@@ -130,7 +127,7 @@ namespace MateInZero
                     Piece piece = gameBoard.boardGrid[x + i, y + 1];
                     if (piece != null)
                     {
-                        if (piece.white != this.white)
+                        if (piece.type == "Pawn" && piece.white != this.white)
                             return false;
                     }
                 }
@@ -164,6 +161,12 @@ namespace MateInZero
             //get own move
             this.suggestMove();
 
+
+            //shuffle moves
+            Random rnd = new Random();
+            Move[] shuffledMoves = suggestedMoves.OrderBy(M => rnd.Next()).ToArray();
+            suggestedMoves = shuffledMoves;
+
             //pick the best move and play it if it does not threaten the king.
             Move bestMove = null;
             foreach (Move move in suggestedMoves)
@@ -172,12 +175,21 @@ namespace MateInZero
                     continue;
                 if(bestMove == null || move.moveValue > bestMove.moveValue)
                 {
-
                     //check if the move is safe
                     if(checkSafe(move.endingSquare.Item1, move.endingSquare.Item2))
                     {
                         //only accept the move if it is safe
                         bestMove = move;
+                    }
+                    else if(move.actor.king == move.actor)
+                    {
+                        //the piece moving is the king so dont use this move
+                        continue;
+                    }
+                    else
+                    {
+                        //unsafe move but the piece is not a king
+                         bestMove = move;
                     }
                 }
                 Console.WriteLine("Suggested move:" + move.endingSquare + ',' + move.actor);

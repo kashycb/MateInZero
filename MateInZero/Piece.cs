@@ -10,6 +10,7 @@ namespace MateInZero
     {
         public bool white;
         public string name;
+        public string type;
         public King king;
         //controls how the piece moves and thinks
         protected Behavior behavior;
