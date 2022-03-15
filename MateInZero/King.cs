@@ -32,6 +32,8 @@ namespace MateInZero
                 pieces[5] = new WhitePawn(gameBoard, 'F', this);
                 pieces[6] = new WhitePawn(gameBoard, 'G', this);
                 pieces[7] = new WhitePawn(gameBoard, 'H', this);
+                pieces[8] = new Knight(gameBoard, 'B', this);
+                pieces[9] = new Knight(gameBoard, 'G', this);
             }
             else
             {
@@ -46,6 +48,8 @@ namespace MateInZero
                 pieces[5] = new BlackPawn(gameBoard, 'F', this);
                 pieces[6] = new BlackPawn(gameBoard, 'G', this);
                 pieces[7] = new BlackPawn(gameBoard, 'H', this);
+                pieces[8] = new Knight(gameBoard, 'B', this);
+                pieces[9] = new Knight(gameBoard, 'G', this);
             }
             this.type = "King";
             this.king = this;
@@ -132,6 +136,7 @@ namespace MateInZero
                     }
                 }
             }
+            //Check if a non friendly knight threatens this sqaure
 
             return true;
         }

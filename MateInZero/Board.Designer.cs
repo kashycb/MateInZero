@@ -127,7 +127,7 @@
             this.pbBKB.BackColor = System.Drawing.Color.Transparent;
             this.pbBKB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBKB.BackgroundImage")));
             this.pbBKB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBKB.Location = new System.Drawing.Point(695, 33);
+            this.pbBKB.Location = new System.Drawing.Point(100, 33);
             this.pbBKB.Name = "pbBKB";
             this.pbBKB.Size = new System.Drawing.Size(65, 60);
             this.pbBKB.TabIndex = 2;
@@ -259,7 +259,7 @@
             this.pbBKG.BackColor = System.Drawing.Color.Transparent;
             this.pbBKG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBKG.BackgroundImage")));
             this.pbBKG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBKG.Location = new System.Drawing.Point(1043, 33);
+            this.pbBKG.Location = new System.Drawing.Point(448, 33);
             this.pbBKG.Name = "pbBKG";
             this.pbBKG.Size = new System.Drawing.Size(65, 60);
             this.pbBKG.TabIndex = 13;
@@ -331,7 +331,7 @@
             this.pbWKG.BackColor = System.Drawing.Color.Transparent;
             this.pbWKG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWKG.BackgroundImage")));
             this.pbWKG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWKG.Location = new System.Drawing.Point(1043, 519);
+            this.pbWKG.Location = new System.Drawing.Point(448, 519);
             this.pbWKG.Name = "pbWKG";
             this.pbWKG.Size = new System.Drawing.Size(65, 60);
             this.pbWKG.TabIndex = 30;
@@ -439,7 +439,7 @@
             this.pbWKB.BackColor = System.Drawing.Color.Transparent;
             this.pbWKB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWKB.BackgroundImage")));
             this.pbWKB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWKB.Location = new System.Drawing.Point(695, 519);
+            this.pbWKB.Location = new System.Drawing.Point(100, 519);
             this.pbWKB.Name = "pbWKB";
             this.pbWKB.Size = new System.Drawing.Size(65, 60);
             this.pbWKB.TabIndex = 21;

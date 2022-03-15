@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Behavior.cs" />
     <Compile Include="BlackPawn.cs" />
+    <Compile Include="Knight.cs" />
     <Compile Include="WhitePawn.cs" />
     <Compile Include="Move.cs" />
     <Compile Include="King.cs" />

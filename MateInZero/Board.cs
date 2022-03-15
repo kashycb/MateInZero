@@ -45,6 +45,8 @@ namespace MateInZero
                 {"White-F-Pawn", this.pbWPF},
                 {"White-G-Pawn", this.pbWPG},
                 {"White-H-Pawn", this.pbWPH},
+                {"White-B-Knight", this.pbWKB},
+                {"White-G-Knight", this.pbWKG},
                 //Black
                 {"Black-King", this.pbBK},
                 {"Black-A-Pawn", this.pbBPA},
@@ -54,7 +56,9 @@ namespace MateInZero
                 {"Black-E-Pawn", this.pbBPE},
                 {"Black-F-Pawn", this.pbBPF},
                 {"Black-G-Pawn", this.pbBPG},
-                {"Black-H-Pawn", this.pbBPH}
+                {"Black-H-Pawn", this.pbBPH},
+                {"Black-B-Knight", this.pbBKB},
+                {"Black-G-Knight", this.pbBKG},
             };
             nextMoveButton.MouseEnter += OnMouseEnterNextMoveButton;
             nextMoveButton.MouseLeave += OnMouseLeaveNextMoveButton;
