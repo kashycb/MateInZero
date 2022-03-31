@@ -34,7 +34,7 @@ namespace MateInZero
             }
             
             
-            this.behavior = new KnightBehacior(this.king);//Define the behavior
+            this.behavior = new KnightBehavior(this.king);//Define the behavior
         }
 
         public override void suggestMove()

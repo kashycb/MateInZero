@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KingBehavior.cs" />
+    <Compile Include="BlackPawnBehavior.cs" />
+    <Compile Include="KnightBehavior.cs" />
+    <Compile Include="WhitePawnBehavior.cs" />
     <Compile Include="Board.cs">
       <SubType>Form</SubType>
     </Compile>
