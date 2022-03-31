@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bishop.cs" />
+    <Compile Include="QueenBehavior.cs" />
+    <Compile Include="Queen.cs" />
     <Compile Include="Rook.cs" />
     <Compile Include="BishopBehavior.cs" />
     <Compile Include="RookBehavior.cs" />

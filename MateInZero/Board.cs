@@ -51,6 +51,7 @@ namespace MateInZero
                 {"White-H-Rook", this.pbWRH},
                 {"White-C-Bishop", this.pbWBC},
                 {"White-F-Bishop", this.pbWBF},
+                {"White-Queen", this.pbWQ},
                 //Black
                 {"Black-King", this.pbBK},
                 {"Black-A-Pawn", this.pbBPA},
@@ -67,6 +68,7 @@ namespace MateInZero
                 {"Black-H-Rook", this.pbBRH},
                 {"Black-C-Bishop", this.pbBBC},
                 {"Black-F-Bishop", this.pbBBF},
+                {"Black-Queen", this.pbBQ},
             };
             nextMoveButton.MouseEnter += OnMouseEnterNextMoveButton;
             nextMoveButton.MouseLeave += OnMouseLeaveNextMoveButton;

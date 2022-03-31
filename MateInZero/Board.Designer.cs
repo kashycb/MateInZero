@@ -199,7 +199,7 @@
             this.pbBQ.BackColor = System.Drawing.Color.Transparent;
             this.pbBQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBQ.BackgroundImage")));
             this.pbBQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBQ.Location = new System.Drawing.Point(835, 33);
+            this.pbBQ.Location = new System.Drawing.Point(238, 33);
             this.pbBQ.Name = "pbBQ";
             this.pbBQ.Size = new System.Drawing.Size(65, 60);
             this.pbBQ.TabIndex = 8;
@@ -415,7 +415,7 @@
             this.pbWQ.BackColor = System.Drawing.Color.Transparent;
             this.pbWQ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWQ.BackgroundImage")));
             this.pbWQ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWQ.Location = new System.Drawing.Point(835, 519);
+            this.pbWQ.Location = new System.Drawing.Point(238, 519);
             this.pbWQ.Name = "pbWQ";
             this.pbWQ.Size = new System.Drawing.Size(65, 60);
             this.pbWQ.TabIndex = 23;
@@ -499,7 +499,7 @@
             this.nextMoveButton.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.nextMoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nextMoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextMoveButton.Location = new System.Drawing.Point(835, 469);
+            this.nextMoveButton.Location = new System.Drawing.Point(818, 449);
             this.nextMoveButton.Name = "nextMoveButton";
             this.nextMoveButton.Size = new System.Drawing.Size(244, 110);
             this.nextMoveButton.TabIndex = 33;
