@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bishop.cs" />
     <Compile Include="Rook.cs" />
+    <Compile Include="BishopBehavior.cs" />
     <Compile Include="RookBehavior.cs" />
     <Compile Include="KingBehavior.cs" />
     <Compile Include="BlackPawnBehavior.cs" />

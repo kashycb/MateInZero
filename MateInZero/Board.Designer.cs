@@ -139,7 +139,7 @@
             this.pbBBC.BackColor = System.Drawing.Color.Transparent;
             this.pbBBC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBBC.BackgroundImage")));
             this.pbBBC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBBC.Location = new System.Drawing.Point(765, 33);
+            this.pbBBC.Location = new System.Drawing.Point(171, 33);
             this.pbBBC.Name = "pbBBC";
             this.pbBBC.Size = new System.Drawing.Size(65, 60);
             this.pbBBC.TabIndex = 3;
@@ -211,7 +211,7 @@
             this.pbBK.BackColor = System.Drawing.Color.Transparent;
             this.pbBK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBK.BackgroundImage")));
             this.pbBK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBK.Location = new System.Drawing.Point(309, 38);
+            this.pbBK.Location = new System.Drawing.Point(308, 33);
             this.pbBK.Name = "pbBK";
             this.pbBK.Size = new System.Drawing.Size(65, 60);
             this.pbBK.TabIndex = 9;
@@ -235,7 +235,7 @@
             this.pbBBF.BackColor = System.Drawing.Color.Transparent;
             this.pbBBF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBBF.BackgroundImage")));
             this.pbBBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbBBF.Location = new System.Drawing.Point(974, 33);
+            this.pbBBF.Location = new System.Drawing.Point(380, 33);
             this.pbBBF.Name = "pbBBF";
             this.pbBBF.Size = new System.Drawing.Size(65, 60);
             this.pbBBF.TabIndex = 11;
@@ -355,7 +355,7 @@
             this.pbWBF.BackColor = System.Drawing.Color.Transparent;
             this.pbWBF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWBF.BackgroundImage")));
             this.pbWBF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWBF.Location = new System.Drawing.Point(974, 519);
+            this.pbWBF.Location = new System.Drawing.Point(375, 519);
             this.pbWBF.Name = "pbWBF";
             this.pbWBF.Size = new System.Drawing.Size(65, 60);
             this.pbWBF.TabIndex = 28;
@@ -427,7 +427,7 @@
             this.pbWBC.BackColor = System.Drawing.Color.Transparent;
             this.pbWBC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWBC.BackgroundImage")));
             this.pbWBC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWBC.Location = new System.Drawing.Point(765, 519);
+            this.pbWBC.Location = new System.Drawing.Point(171, 519);
             this.pbWBC.Name = "pbWBC";
             this.pbWBC.Size = new System.Drawing.Size(65, 60);
             this.pbWBC.TabIndex = 22;
@@ -499,7 +499,7 @@
             this.nextMoveButton.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.nextMoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nextMoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextMoveButton.Location = new System.Drawing.Point(849, 474);
+            this.nextMoveButton.Location = new System.Drawing.Point(835, 469);
             this.nextMoveButton.Name = "nextMoveButton";
             this.nextMoveButton.Size = new System.Drawing.Size(244, 110);
             this.nextMoveButton.TabIndex = 33;

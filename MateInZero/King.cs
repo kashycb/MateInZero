@@ -36,6 +36,8 @@ namespace MateInZero
                 pieces[9] = new Knight(gameBoard, 'G', this);
                 pieces[10] = new Rook(gameBoard, 'A', this);
                 pieces[11] = new Rook(gameBoard, 'H', this);
+                pieces[12] = new Bishop(gameBoard, 'C', this);
+                pieces[13] = new Bishop(gameBoard, 'F', this);
             }
             else
             {
@@ -54,6 +56,8 @@ namespace MateInZero
                 pieces[9] = new Knight(gameBoard, 'G', this);
                 pieces[10] = new Rook(gameBoard, 'A', this);
                 pieces[11] = new Rook(gameBoard, 'H', this);
+                pieces[12] = new Bishop(gameBoard, 'C', this);
+                pieces[13] = new Bishop(gameBoard, 'F', this);
             }
             this.type = "King";
             this.king = this;
