@@ -6,40 +6,40 @@ using System.Threading.Tasks;
 
 namespace MateInZero
 {
-    public class Knight : Piece
+    public class Rook : Piece
     {
         //remove deafault constructor
-        private Knight() { }
+        private Rook() { }
         public GameBoard gameBoard;
-        public Knight(GameBoard board, char file, King k)
+        public Rook(GameBoard board, char file, King k)
         {
             var lettermap = new Dictionary<char, int> {
-            {'a', 0},{'b', 1},{'c', 2},{'d', 3},{'e', 4},{'f', 5},{'g', 6},{'h', 7},
+            {'a', 0},{'h', 7},
             };
             gameBoard = board;
             king = k;
             this.white = king.white;
-            this.type = "Knight";
+            this.type = "Rook";
             int result;
             lettermap.TryGetValue(Char.ToLower(file), out result);
             if (this.white)
             {
                 this.currentPosition = Tuple.Create<int, int>(result, 0);
-                this.name = "White-" + file.ToString() + "-Knight";
+                this.name = "White-" + file.ToString() + "-Rook";
             }
             else
             {
                 this.currentPosition = Tuple.Create<int, int>(result, 7);
-                this.name = "Black-" + file.ToString() + "-Knight";
+                this.name = "Black-" + file.ToString() + "-Rook";
             }
-            
-            
-            this.behavior = new KnightBehavior(this.king);//Define the behavior
+
+
+            this.behavior = new RookBehavior(this.king);//Define the behavior
         }
 
         public override void suggestMove()
         {
-            //pick a move for the pawn
+            //pick a move for the rook
             Move pickedMove = pickMove(this);
             //add suggested move to the king's list
             int i;
@@ -49,3 +49,4 @@ namespace MateInZero
         }
     }
 }
+

@@ -49,6 +49,8 @@ namespace MateInZero
             this.boardGrid[7, 1] = whiteKing.pieces[7];
             this.boardGrid[1, 0] = whiteKing.pieces[8];
             this.boardGrid[6, 0] = whiteKing.pieces[9];
+            this.boardGrid[0, 0] = whiteKing.pieces[10];
+            this.boardGrid[7, 0] = whiteKing.pieces[11];
             this.boardGrid[4, 0] = whiteKing;
             //Black
             this.boardGrid[0, 6] = blackKing.pieces[0];
@@ -61,6 +63,8 @@ namespace MateInZero
             this.boardGrid[7, 6] = blackKing.pieces[7];
             this.boardGrid[1, 7] = blackKing.pieces[8];
             this.boardGrid[6, 7] = blackKing.pieces[9];
+            this.boardGrid[0, 7] = blackKing.pieces[10];
+            this.boardGrid[7, 7] = blackKing.pieces[11];
             this.boardGrid[4, 7] = blackKing;
         }
 
