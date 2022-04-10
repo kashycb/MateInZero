@@ -16,7 +16,7 @@ namespace MateInZero
             gameBoard = board;
             king = k;
             this.white = king.white;
-            this.type = "Rook";
+            this.type = "Queen";
             if (this.white)
             {
                 this.currentPosition = Tuple.Create<int, int>(3, 0);

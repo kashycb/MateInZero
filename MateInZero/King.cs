@@ -13,7 +13,7 @@ namespace MateInZero
         private King(){ }
         
         public GameBoard gameBoard;
-
+        public bool castleRights = true;
         //keep an array of subbordinate pieces
         public Piece[] pieces = new Piece[15];
         public King(bool white, GameBoard board)

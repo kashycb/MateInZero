@@ -11,6 +11,7 @@ namespace MateInZero
         //remove deafault constructor
         private Rook() { }
         public GameBoard gameBoard;
+        public bool castleRights = true;
         public Rook(GameBoard board, char file, King k)
         {
             var lettermap = new Dictionary<char, int> {

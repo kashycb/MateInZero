@@ -92,6 +92,42 @@ namespace MateInZero
 
         public void playMove(Move move)
         {
+            //handle castling rights
+            if(move.actor.type == "Rook")
+            {
+                ((Rook)move.actor).castleRights = false;
+            }
+
+            if(move.actor.type == "King" && Math.Abs(move.startingSquare.Item1 - move.endingSquare.Item1) == 1)
+            {
+                ((King)move.actor).castleRights = false;
+            }
+            if(move.actor.type == "King" && Math.Abs(move.startingSquare.Item1 - move.endingSquare.Item1) > 1)
+            {
+                //king has castled need to move the rook
+                if(move.endingSquare.Item1 == 6 && move.endingSquare.Item2 == 0)//white short castle
+                {
+                    Move rookMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(7, 0), endingSquare = Tuple.Create<int, int>(5, 0), actor = this.boardGrid[7,0]};
+                    this.playMove(rookMove);
+                }
+                else if(move.endingSquare.Item1 == 6 && move.endingSquare.Item2 == 7)//black short castle
+                {
+                    Move rookMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(7, 7), endingSquare = Tuple.Create<int, int>(5, 7), actor = this.boardGrid[7, 7]};
+                    this.playMove(rookMove);
+                }
+                else if(move.endingSquare.Item1 == 2 && move.endingSquare.Item2 == 0)//white long castle
+                {
+                    Move rookMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(0, 0), endingSquare = Tuple.Create<int, int>(3, 0), actor = this.boardGrid[0, 0] };
+                    this.playMove(rookMove);
+                }
+                else if(move.endingSquare.Item1 == 2 && move.endingSquare.Item2 == 7)//black long castle
+                {
+                    Move rookMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(0, 7), endingSquare = Tuple.Create<int, int>(3, 7), actor = this.boardGrid[0, 7] };
+                    this.playMove(rookMove);
+                }
+            }
+
+
             Piece p = this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2];
             if (p != null)
             {

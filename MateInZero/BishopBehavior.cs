@@ -18,9 +18,9 @@ namespace MateInZero
         //Move values
         private int ESCAPE_THREAT = 25;
         private int CAPTURE_PIECE = 20;
-        private int NON_ESSENTIAL_MOVE = 2;
+        private int NON_ESSENTIAL_MOVE = 10;
         //rank of the piece (to be multiplied with move values)
-        private int PRIORITY_MULTIPLYER = 3;
+        private int PRIORITY_MULTIPLYER = 2;
 
         //find the rook's most preffered move
         public override Move pickMove(int x, int y, Piece actor)
