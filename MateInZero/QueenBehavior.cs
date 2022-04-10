@@ -18,7 +18,7 @@ namespace MateInZero
         //Move values
         private int ESCAPE_THREAT = 25;
         private int CAPTURE_PIECE = 20;
-        private int NON_ESSENTIAL_MOVE = 2;
+        private int NON_ESSENTIAL_MOVE = 10;
         //rank of the piece (to be multiplied with move values)
         private int PRIORITY_MULTIPLYER = 5;
 
@@ -128,7 +128,7 @@ namespace MateInZero
                             else//unnoccupied square
                             {
                                 //add the move as a non-essential move
-                                Move move = new Move { moveValue = (NON_ESSENTIAL_MOVE + 1) * PRIORITY_MULTIPLYER, startingSquare = Tuple.Create<int, int>(x, y), endingSquare = Tuple.Create<int, int>(x, vert), actor = actor };
+                                Move move = new Move { moveValue = NON_ESSENTIAL_MOVE * PRIORITY_MULTIPLYER, startingSquare = Tuple.Create<int, int>(x, y), endingSquare = Tuple.Create<int, int>(x, vert), actor = actor };
                                 moves[placementIndex] = move;
                                 ++placementIndex;
                             }

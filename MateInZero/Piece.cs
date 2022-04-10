@@ -13,7 +13,7 @@ namespace MateInZero
         public string type;
         public King king;
         //controls how the piece moves and thinks
-        protected Behavior behavior;
+        public Behavior behavior;
         //Where the piece is on the board (x,y) cartesian coords
         public Tuple<int, int> currentPosition;
 

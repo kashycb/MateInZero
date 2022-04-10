@@ -75,6 +75,14 @@ namespace MateInZero
             this.FormClosing += new FormClosingEventHandler(Board_FormClosing);
         }
 
+        public void promotePawn(string pawnName, bool white)
+        {
+            PictureBox piece = pieceNames[pawnName];
+            if (white)
+                piece.BackgroundImage = this.pbWQ.BackgroundImage;
+            else
+                piece.BackgroundImage = this.pbBQ.BackgroundImage;
+        }   
         public void movePiece(String pieceName, Tuple<int, int> newCoords, Tuple<int, int> oldCoords) 
         {
             //get piece reference from dictionary

@@ -168,6 +168,14 @@ namespace MateInZero
                 Move pawnMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(move.endingSquare.Item1, move.endingSquare.Item2), endingSquare = Tuple.Create<int, int>(move.endingSquare.Item1, move.endingSquare.Item2 + i), actor = this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2] };
                 this.playMove(pawnMove);
             }
+
+            //handle promotion
+            if(move.actor.type == "Pawn" && (move.endingSquare.Item2 == 7 || move.endingSquare.Item2 == 0))//promote the pawn
+            {
+                board.promotePawn(move.actor.name, move.actor.white);
+                move.actor.type = "Queen";
+                move.actor.behavior = new QueenBehavior(move.actor.king);
+            }
         }
     }
 }
