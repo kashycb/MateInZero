@@ -127,6 +127,15 @@ namespace MateInZero
                 }
             }
 
+            //handle en passant 
+            if(move.actor.type == "Pawn" && Math.Abs(move.startingSquare.Item2 - move.endingSquare.Item2) > 1)
+            {
+                if (move.actor.white)
+                    ((WhitePawn)move.actor).enPassantTarget = true;
+                else
+                    ((BlackPawn)move.actor).enPassantTarget = true;
+            }
+            
 
             Piece p = this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2];
             if (p != null)
@@ -148,6 +157,17 @@ namespace MateInZero
             move.actor.currentPosition = Tuple.Create<int, int>(move.endingSquare.Item1, move.endingSquare.Item2);
             //Make move on visual board
             board.movePiece(move.actor.name, move.endingSquare, move.startingSquare);
+
+            //handle en passant capture
+            if (move.actor.type == "Pawn" && move.endingSquare.Item2 == move.startingSquare.Item2)
+            {
+                int i = -1;
+                if (move.actor.white)
+                    i = 1;
+
+                Move pawnMove = new Move { moveValue = 0, startingSquare = Tuple.Create<int, int>(move.endingSquare.Item1, move.endingSquare.Item2), endingSquare = Tuple.Create<int, int>(move.endingSquare.Item1, move.endingSquare.Item2 + i), actor = this.boardGrid[move.endingSquare.Item1, move.endingSquare.Item2] };
+                this.playMove(pawnMove);
+            }
         }
     }
 }

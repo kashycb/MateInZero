@@ -16,6 +16,7 @@ namespace MateInZero
         //remove deafault constructor
         private WhitePawn() { }
         public GameBoard gameBoard;
+        public bool enPassantTarget = false;
         public WhitePawn(GameBoard board, char file, King k)
         {
             this.white = true;
@@ -34,6 +35,7 @@ namespace MateInZero
 
         public override void suggestMove()
         {
+            this.enPassantTarget = false;
             //pick a move for the pawn
             Move pickedMove = pickMove(this);
             //add suggested move to the king's list
